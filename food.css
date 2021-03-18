@@ -1,0 +1,13 @@
+.food{position: absolute;
+     top: 100px;
+    left: 100px;}
+.beverages{position: relative;
+           
+           left: 300px;}    
+h4,p,img{padding-left: 40px;}           
+
+table{background-color: black;
+      color: white;
+      width: 500px;
+    border: 200px;
+    border-radius: 10px;}          

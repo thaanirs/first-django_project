@@ -1,0 +1,12 @@
+table {width: 700px;
+    margin-left: 300px;}
+th {background-color: blueviolet;}
+td {padding-left: 30px;
+padding-right: 30px;
+color: coral;
+}
+img {background-size: cover;}    
+body {background-image: url(infinit.jpg);
+    background-size: cover;
+    }
+font {font-size:x-large;} 

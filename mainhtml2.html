@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <title>main</title>
+    <link rel="stylesheet" href="{% static 'styles/style3.css'%}" type='text/css'>
+    
+  </head>
+  <style>
+    body{background-image: url("{%static 'images/bg1.jpg' %}");
+         background-size: cover;
+        background-attachment: fixed;}
+  </style>
+  
+  <body>
+   
+    <h1>INDOAIR</h1>
+      
+
+      <ul>
+         <li><a href='page'>Home</a></li>
+         <li><a href="about">About</a></li>
+         <li><a href='page3'>Tutorial</a></li>
+         <li><a href="create_account.html">Create an account</a></li>
+         <li><a href="page5">History</a></li>
+         
+      </ul>
+      <br><br><br>
+      
+    <form class="form_noob" action="details" method="">
+      
+      <center><h2>Book your ticket</h2></center>
+      <br>
+
+      <div class='padforfrom'>
+      <fieldset>
+        <legend>From</legend>
+        <!--<label for="">From</label>-->
+        <select name='From'>
+          <option value='chennai'>chennai</option>
+          <option value='mumbai'>mumbai</option>
+          <option value='kolkata'>kolkata</option>
+          <option value="goa">goa</option>
+        </select>
+      </fieldset>
+      </div><br>
+
+
+
+      <div class="padforto">
+      <fieldset>
+       <legend>To</legend>
+      <!--<label for="">To</label>-->
+          <select name='To'>
+          <option value="gujarat">gujarat</option>
+          <option value='chennai'>chennai</option>
+          <option value='mumbai'>mumbai</option>
+          <option value='kolkata'>kolkata</option>
+          <option value="goa">goa</option>
+          </select>
+      </fieldset>
+      </div><br>
+
+
+
+
+      <div class='padfordate'>
+        <fieldset>
+        <legend>DepatureDate</legend>
+      <!--<label for="">D_Date</label>-->
+      <input type="date" name="date" value="09-12-2002" required>
+      </fieldset>
+      </div>
+
+
+      
+      <br>
+
+
+        <div class="Passengers">
+          <fieldset>
+            <legend>Passengers</legend>
+          <!--<label for="">Passengers</label>-->
+          <input type="number" name="no_of_people" value="1" placeholder="1" required>
+          <br>
+          </fieldset>
+        </div>
+        <br>
+        <div class="radio">
+          <input type="radio" name="class" value="senior" required>senior citizen
+          <input type="radio" name="class" value="stud">student
+          <input type="radio" name="class" value="minor">Minor
+          <input type="radio" name="class" value="army">armed forces
+
+        </div> <br>
+        <div><input type="submit"></div>
+    </form>
+
+    <marquee behavior="slide" direction="" width='30%' scrollamount='15' >
+        
+        <img src= 'static/images/slide1.jpg' alt="" width="400" height="500">
+        <img src="static/images/slide2.jpg" alt="" width="400" height="500">
+        <img src="static/images/slide3.jpg" alt="" width="400" height="500">
+       <!-- <img src="static/images/index.jpg" alt=""  width='400' height="500">
+       -->
+       
+
+
+
+    </marquee>
+    
+
+
+  </body>
+</html>
+ 

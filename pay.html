@@ -1,0 +1,86 @@
+{% load static %}
+<html>
+<head>
+<title>pay your money</title>
+<link rel="stylesheet"  type='text/css' href="{% static 'styles/pay.css' %}"/>
+</head>
+<style>
+    body{background-image: url("{%static 'images/bg1.jpg' %}");
+    background-size: cover;
+    background-attachment: fixed;}
+</style>
+ 
+<body  class='pay_body'>
+
+     <!--   <img src="static/images/tenor1.gif"  alt="" id="gifa">
+        <img src="static/images/tenor2.gif"  alt="" id="gifb">
+        <img src="static/images/spong.gif"   alt="" id='gifc' >
+     -->
+
+    <form action="transaction" class='form_pay'>
+       
+            <center><h1>!! pay for your ticket!!</h1></center>
+            <center>   
+                you have to pay Rs {{sum_amount}}
+                    <div>_Email__: <input type="email" class="cost" required></div> <br><br>
+                    <div>Username: <input type="text"  class='cost'required></div><br><br>
+
+                    <div>
+                        debit: <input type="radio" name="pay" id="" required>
+                        credit: <input type="radio" name="pay" id="" required>
+                        Paytm: <input type="radio" name="pay" id="" required>
+                    </div><br><br>
+                
+
+    <div>
+        <fieldset class='fieldset_pay'>
+            <legend>Card Holder's name:</legend>
+             <center><input type="text" value="" required></center>
+            </fieldset>
+            <br><br>
+    </div>
+    <div>
+        <fieldset class='fieldset_pay'>
+            <legend>cardnumber: </legend>
+            <center><input type="number" required></center>
+        </fieldset>
+    </div><br><br>
+
+    <div>
+        <fieldset class='fieldset_pay'>
+            <legend>expiry date:</legend>
+             <center><input type="date" required></center>
+            </fieldset>
+    </div><br><br>
+
+    <div>
+        <fieldset class='fieldset_pay'>
+            <legend>ATM PIN/CVV:</legend>
+             <center><input type="text" placeholder='enter the no' maxlength="4" required></center>
+            </fieldset>
+    </div><br><br>
+
+
+        
+
+    <div>
+        <fieldset class="fieldset_pay">captcha: <div><h2><span>{{captcha}}</span></h2></div>
+            <center><input type="text" maxlength="9" width="480" height="300" required></center>
+        </fieldset>
+    </div><br><br>
+
+
+
+    </fieldset>
+    <button type="submit" size='20'>submit</button>
+    <button type="reset">reset</button>
+
+
+
+    </form>
+    </center>
+
+
+</body>
+
+</html>

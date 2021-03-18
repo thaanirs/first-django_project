@@ -1,0 +1,41 @@
+{%load static%}
+{%static "images" as baseUrl%}
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>for_tst</title>
+    <link rel="stylesheet" href="{% static 'styles/flights.css' %}">
+</head>
+<body>
+<!--{{no_p}}
+    {{flight}}
+--><form action="cost1">
+        <table border="3">
+            <thead><h1>Flights available</h1></thead><hr>
+            <tr>
+                    <th>s.no</th>
+                    <th class='sri'>flights</th>
+                    <th>fare</th>
+                    <th class='naath'>book</th>
+                    <th>Dep-Arr"in 24hr format"</th>
+            </tr>
+            {%for i in flight%}
+            <tr>
+                <td>{{i.no}}</td>
+                <td class='sri'>
+                        <div><img src="{{baseUrl}}/{{i.image}}" alt="" >{{i.name}}</div>
+                
+                </td>
+                <td class="naath" value="9425">Rs:{{i.fare}}</td>
+                <td class='naath'><input type="radio" value="{{i.no}}" name="fl_no"></td>
+                <td class='naath'>{{i.time}}</td>
+            </tr>
+            {%endfor%}
+        </table><br><br>
+
+        <center><input type="submit" value="book">
+                <input type="reset" value="reset"></center>
+    </form>
+</body>
+</html>

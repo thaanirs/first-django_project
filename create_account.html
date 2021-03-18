@@ -1,0 +1,28 @@
+{%load static%}
+<HTML>
+<HEAD>
+    <title>creating account</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'styles/create_account.css'%}">
+</HEAD>
+
+<style> 
+    body{background-image: url("{%static 'images/back_img.png' %}");
+    background-size: cover;
+   background-attachment: fixed;}</style>
+ 
+<body>
+       
+    
+     <form action="">
+    <h1>create new account</h1><hr>
+    <div>first_name: <input type="text" placeholder="enter your name" name='first' required></div><br>
+    <div>last_name: <input type="text" name='last'></div><br>
+    <div>D.O.B: <input type="date" name='dob' required></div><br>
+    <div>password: <input type="password" name='passwd' required></div><br>
+
+    <div>confirm_password: <input type="password" name='passwd2' required></div><br>
+    <div>phone.no <input type="number" name='phone' required></div><br>
+    <div><button><a href="mainhtml2.html">submit</a></button></div>
+     </form>   
+</body>
+</HTML>
